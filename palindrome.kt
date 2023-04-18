@@ -7,9 +7,14 @@ fun compute(str: String): String {
 	var longestPalindrome = StringBuffer()
 
 	while(start < str.length){
+		if(str.equals(str.reversed()){
+			return str
+		}
+		
 		if(strChars[start] == revChars[start]){
 			longestPalindrome.append(revChars[start])
 		}
+
 		start++
 	}
 	
