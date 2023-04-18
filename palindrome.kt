@@ -6,11 +6,9 @@ fun compute(str: String): String {
 	val revChars = str.reversed()
 	var longestPalindrome = StringBuffer()
 
-	while(start < str.length){
-		if(str.equals(str.reversed()){
-			return str
-		}
-		
+	if(str.equals(str.reversed()){ return str }
+
+	while(start < str.length){		
 		if(strChars[start] == revChars[start]){
 			longestPalindrome.append(revChars[start])
 		}
